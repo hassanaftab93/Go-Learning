@@ -24,12 +24,15 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
     </h2>
   </summary>
 
-  - [Gophercises - Calhoun.io](https://courses.calhoun.io/courses/cor_gophercises)
-  - [Learn Go Programming by Building 11 Projects – Full Course](https://www.youtube.com/watch?v=jFfo23yIWac)
-  - [Golang Tutorial for Beginners | Full Go Course](https://www.youtube.com/watch?v=yyUHQIec83I)
+  - [Golang - Roadmap](https://roadmap.sh/golang)
+  - [Golang - Youtube - Go Tutorial](https://youtu.be/YS4e4q9oBaU)
+  - [Golang - Calhoun.io - Go Tutorial](https://courses.calhoun.io/courses/cor_gophercises)
+  - [Golang - Youtube - 11 Projects](https://www.youtube.com/watch?v=jFfo23yIWac)
+  - [Golang - Youtube - Beginners](https://www.youtube.com/watch?v=yyUHQIec83I)
 </details>
 
 <!---------------------------------------- SECTION DIVIDER ---------------------------------------->
+<!--
 <details>
   <summary>
     <h2>
@@ -46,7 +49,7 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
     commands / code
   ```
 </details>
-
+-->
 <!---------------------------------------- SECTION DIVIDER ---------------------------------------->
 <details>
   <summary>
