@@ -1,5 +1,5 @@
 
-# Project Name
+# Go Projects & Learning Material
 
 <!-- --- DEPLOYMENT STATUS CODE ---
 
@@ -20,12 +20,12 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
 <details>
   <summary>
     <h2>
-      🛠 SubTopic: What to Explain / Dry Runs etc.
+      🛠 Links
     </h2>
   </summary>
 
-  - Subtopic Detail 1
-  - Subtopic Detail 2
+  - [Learning Materials Link](https://courses.calhoun.io/courses/cor_gophercises)
+  - [Learn Go Programming by Building 11 Projects – Full Course](https://www.youtube.com/watch?v=jFfo23yIWac)
 </details>
 
 <!---------------------------------------- SECTION DIVIDER ---------------------------------------->
