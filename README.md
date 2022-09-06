@@ -24,7 +24,7 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
     </h2>
   </summary>
 
-  - [Learning Materials Link](https://courses.calhoun.io/courses/cor_gophercises)
+  - [Gophercises - Calhoun.io](https://courses.calhoun.io/courses/cor_gophercises)
   - [Learn Go Programming by Building 11 Projects – Full Course](https://www.youtube.com/watch?v=jFfo23yIWac)
 </details>
 
