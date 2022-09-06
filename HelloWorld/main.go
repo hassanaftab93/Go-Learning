@@ -6,5 +6,9 @@ import (
 )
 
 func main() {
+
+	// Hello World
 	fmt.Println(functions.Greet())
+
+	//Loops
 }
