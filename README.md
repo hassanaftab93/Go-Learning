@@ -24,6 +24,7 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
     </h2>
   </summary>
 
+  - [Golang - w3schools](https://www.w3schools.com/go/index.php)
   - [Golang - Roadmap](https://roadmap.sh/golang)
   - [Golang - Youtube - Go Tutorial](https://youtu.be/YS4e4q9oBaU)
   - [Golang - Calhoun.io - Go Tutorial](https://courses.calhoun.io/courses/cor_gophercises)
