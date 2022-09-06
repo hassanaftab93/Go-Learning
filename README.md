@@ -26,6 +26,7 @@ Deployment Status: [![Deploy to Heroku](https://github.com/hassanaftab93/REPO-NA
 
   - [Gophercises - Calhoun.io](https://courses.calhoun.io/courses/cor_gophercises)
   - [Learn Go Programming by Building 11 Projects – Full Course](https://www.youtube.com/watch?v=jFfo23yIWac)
+  - [Golang Tutorial for Beginners | Full Go Course](https://www.youtube.com/watch?v=yyUHQIec83I)
 </details>
 
 <!---------------------------------------- SECTION DIVIDER ---------------------------------------->
