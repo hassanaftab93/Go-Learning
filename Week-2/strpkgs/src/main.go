@@ -18,6 +18,7 @@ func main() {
 	fmt.Println("\nThe weird function called (3): ", functions.TestFunction(1.2))
 	//It worked, buet yet to figure out, how to return dynamic values from a function
 
+	//String Variables for use
 	string1 := "Hassan is studying BSCS from Hassan University, Hassan Abdal"
 	string2 := "  These are Extra Spaces.  "
 	string3 := "??sampleEmail@email.com??"
