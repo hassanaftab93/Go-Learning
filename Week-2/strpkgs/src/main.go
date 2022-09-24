@@ -22,10 +22,11 @@ func main() {
 	string2 := "  These are Extra Spaces.  "
 	string3 := "??sampleEmail@email.com??"
 
+	//Replace Function
 	fmt.Println("\nFunction output: ", stringpackage.ReplaceIt(string1, "Hassan", "Aftab", 1))
 
+	//Trim Functions
 	fmt.Println("\nTrim Function output: ")
-
 	fmt.Println(stringpackage.SpaceTrimmer(string2))  //Trims Spaces
 	fmt.Println(stringpackage.Trimmer(string3, "??")) //Trims Leading and Trailing characters
 
