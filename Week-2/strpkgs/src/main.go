@@ -17,7 +17,16 @@ func main() {
 	fmt.Println("\nThe weird function called (2): ", functions.TestFunction("?"))
 	fmt.Println("\nThe weird function called (3): ", functions.TestFunction(1.2))
 	//It worked, buet yet to figure out, how to return dynamic values from a function
-	s := "Hassan is studying BSCS from Hassan University, Hassan Abdal"
 
-	fmt.Println("\n Function output: ", stringpackage.ReplaceIt(s, "Hassan", "Kanza", 1))
+	string1 := "Hassan is studying BSCS from Hassan University, Hassan Abdal"
+	string2 := "  These are Extra Spaces.  "
+	string3 := "??sampleEmail@email.com??"
+
+	fmt.Println("\nFunction output: ", stringpackage.ReplaceIt(string1, "Hassan", "Kanza", 1))
+
+	fmt.Println("\nTrim Function output: ")
+
+	fmt.Println(stringpackage.SpaceTrimmer(string2))  //Trims Spaces
+	fmt.Println(stringpackage.Trimmer(string3, "??")) //Trims Leading and Trailing characters
+
 }
