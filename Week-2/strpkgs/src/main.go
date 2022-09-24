@@ -22,7 +22,7 @@ func main() {
 	string2 := "  These are Extra Spaces.  "
 	string3 := "??sampleEmail@email.com??"
 
-	fmt.Println("\nFunction output: ", stringpackage.ReplaceIt(string1, "Hassan", "Kanza", 1))
+	fmt.Println("\nFunction output: ", stringpackage.ReplaceIt(string1, "Hassan", "Aftab", 1))
 
 	fmt.Println("\nTrim Function output: ")
 
