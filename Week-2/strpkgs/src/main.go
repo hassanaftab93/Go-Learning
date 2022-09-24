@@ -17,4 +17,7 @@ func main() {
 	fmt.Println("\nThe weird function called (2): ", functions.TestFunction("?"))
 	fmt.Println("\nThe weird function called (3): ", functions.TestFunction(1.2))
 	//It worked, buet yet to figure out, how to return dynamic values from a function
+	s := "Hassan is studying BSCS from Hassan University, Hassan Abdal"
+
+	fmt.Println("\n Function output: ", stringpackage.ReplaceIt(s, "Hassan", "Kanza", 1))
 }
