@@ -11,12 +11,11 @@ func main() {
 	var err error
 
 	fmt.Print("\nEnter a Float value: ")
-	fmt.Scan(&userNum)
+	_, err = fmt.Scan(&userNum)
 
 	if err == nil {
 		fmt.Println("\nTruncated Integer: ", math.Trunc(float64(userNum)))
 	} else {
 		fmt.Println("\nError: ", err)
 	}
-
 }
