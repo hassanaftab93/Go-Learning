@@ -83,27 +83,27 @@ func ReadFile(Path string) string {
 func WriteFile(Path string, data []byte) { //										Write to file
 	err := os.WriteFile(Path, data, 0777)
 	if err == nil {
-		fmt.Println("File Written")
+		fmt.Println("\nFile Written")
 	} else {
 		fmt.Println("\nError: ", err)
 	}
 }
 
-func main() {
-	fmt.Println("\nWeek 4 Start")
+// func main() {
+// 	fmt.Println("\nWeek 4 Start")
 
-	p1 := Person{Name: "Hassan", Address: "123ee", Phone: "923333"} //				Person Object
+// 	p1 := Person{Name: "Hassan", Address: "123ee", Phone: "923333"} //				Person Object
 
-	jsonObject := MarshalFunction(p1) //											Go->JSON
-	fmt.Println("\nGo->JSON: ", jsonObject)
+// 	jsonObject := MarshalFunction(p1) //											Go->JSON
+// 	fmt.Println("\nGo->JSON: ", jsonObject)
 
-	p2 := UnMarshalFunction(jsonObject) //											JSON->Go
-	p2.Name = "Aftab"
-	fmt.Println("\nJSON->Go: ", p2)
+// 	p2 := UnMarshalFunction(jsonObject) //											JSON->Go
+// 	p2.Name = "Aftab"
+// 	fmt.Println("\nJSON->Go: ", p2)
 
-	fmt.Println("\nRead from File: ", ReadFile("./assets/text.txt")) //				Read File Function
+// 	fmt.Println("\nRead from File: ", ReadFile("./assets/text.txt")) //				Read File Function
 
-	fmt.Println("\nWriting to File: ")
-	data := "This is modified data"
-	WriteFile("./assets/writefileFunction.txt", []byte(data))
-}
+// 	fmt.Println("\nWriting to File: ")
+// 	data := "This is modified data, again"
+// 	WriteFile("./assets/writefileFunction.txt", []byte(data)) //					Write Function
+// }
