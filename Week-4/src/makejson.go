@@ -1,12 +1,5 @@
 package main
 
-import (
-	"bufio"
-	"encoding/json"
-	"fmt"
-	"os"
-)
-
 /*
 Write a program which prompts the user to first enter a name, and then enter an address.
 
@@ -29,6 +22,7 @@ func ReturnMap() map[string]string {
 	return idMap
 }
 
+/*
 func WriteFile(Path string, data []byte) { //										Write to file
 	err := os.WriteFile(Path, data, 0777)
 	if err == nil {
@@ -44,6 +38,7 @@ func MapToJSON(mapObj map[string]string) {
 	fmt.Println(bArray)
 	WriteFile("./assets/converted.JSON", bArray)
 }
+
 
 func getName() string {
 	fmt.Println("\nEnter Name: ")
@@ -68,3 +63,4 @@ func main() {
 	MapToJSON(ReturnMap())                //			Returning the Map for conversion purposes
 
 }
+*/
