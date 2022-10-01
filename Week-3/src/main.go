@@ -30,7 +30,12 @@ func main() {
 
 	//Slices
 	fmt.Println("\nSlice1: arr[1:3]: ", slices.ReturnSlice1())
+	fmt.Println("\nLen(Slice1): ", slices.ReturnLenSlice1())
+	fmt.Println("\nCap(Slice1): ", slices.ReturnCapSlice1())
+
 	fmt.Println("\nSlice2: arr[3:6]: ", slices.ReturnSlice2())
+	fmt.Println("\nLen(Slice2): ", slices.ReturnLenSlice2())
+	fmt.Println("\nCap(Slice2): ", slices.ReturnCapSlice2())
 
 	fmt.Println("\nAssignment related calls:")
 	//Assignment related calls here
