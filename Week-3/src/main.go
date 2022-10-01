@@ -37,7 +37,13 @@ func main() {
 	fmt.Println("\nLen(Slice2): ", slices.ReturnLenSlice2())
 	fmt.Println("\nCap(Slice2): ", slices.ReturnCapSlice2())
 
-	fmt.Println("\nAssignment related calls:")
+	//Variable Slices
+	slice := variableSlices.MakeIntSlice(5)
+	fmt.Println("\nReturned Slice with Make(): ", slice)
+	slice = variableSlices.AppendSlice(slice, 1)
+	fmt.Println("\nReturned Slice with Append(): ", slice)
+
 	//Assignment related calls here
+	fmt.Println("\nAssignment related calls:")
 
 }
