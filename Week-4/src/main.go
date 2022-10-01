@@ -80,14 +80,14 @@ func ReadFile(Path string) string {
 	return string(data)
 }
 
-func WriteFile(Path string, data []byte) { //										Write to file
-	err := os.WriteFile(Path, data, 0777)
-	if err == nil {
-		fmt.Println("\nFile Written")
-	} else {
-		fmt.Println("\nError: ", err)
-	}
-}
+// func WriteFile(Path string, data []byte) { //										Write to file
+// 	err := os.WriteFile(Path, data, 0777)
+// 	if err == nil {
+// 		fmt.Println("\nFile Written")
+// 	} else {
+// 		fmt.Println("\nError: ", err)
+// 	}
+// }
 
 // func main() {
 // 	fmt.Println("\nWeek 4 Start")

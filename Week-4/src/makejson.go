@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 )
@@ -17,6 +18,32 @@ and then your program should print the JSON object.
 
 
 */
+
+var idMap = map[string]string{}
+
+func AddKeyValuePair(name string, address string) {
+	idMap[name] = address
+}
+
+func ReturnMap() map[string]string {
+	return idMap
+}
+
+func WriteFile(Path string, data []byte) { //										Write to file
+	err := os.WriteFile(Path, data, 0777)
+	if err == nil {
+		fmt.Println("\nFile Written to Directory ./assets/")
+	} else {
+		fmt.Println("\nError: ", err)
+	}
+}
+
+func MapToJSON(mapObj map[string]string) {
+	bArray, _ := json.Marshal(mapObj) //			Conversion Go Map -> JSON
+	fmt.Println("\nGo -> JSON Converted\n")
+	fmt.Println(bArray)
+	WriteFile("./assets/converted.JSON", bArray)
+}
 
 func getName() string {
 	fmt.Println("\nEnter Name: ")
@@ -36,6 +63,8 @@ func getAddr() string {
 
 func main() {
 	fmt.Println("\nWeek 4 - Assignment 1")
-	getName()
-	getAddr()
+
+	AddKeyValuePair(getName(), getAddr()) //			Getting Name,Address and Adding the key/val to the Map
+	MapToJSON(ReturnMap())                //			Returning the Map for conversion purposes
+
 }
