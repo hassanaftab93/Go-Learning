@@ -31,3 +31,9 @@ func ExportidMap() map[string]int {
 func AddKeyValuePair(key string, value int) {
 	idMap[key] = value
 }
+
+func DeleteKeyValuePair(mapName string, key string) {
+	if mapName == "idMap" {
+		delete(idMap, key)
+	}
+}

@@ -46,8 +46,13 @@ func main() {
 	//Maps+Hashtables
 	fmt.Println("\nMap: ", maps.ExportidMap())
 	fmt.Println("\nMap value for \"Hassan\": ", maps.ExportidMap()["Hassan"])
+
 	fmt.Println("\nAdding new pair: ")
 	maps.AddKeyValuePair("TEO", 4)
+	fmt.Println("\nMap after adding keyvalue pair: ", maps.ExportidMap())
+
+	fmt.Println("\nDeleting a keyvalue pair")
+	maps.DeleteKeyValuePair("idMap", "TEO")
 	fmt.Println("\nMap after adding keyvalue pair: ", maps.ExportidMap())
 
 	//Assignment related calls here
