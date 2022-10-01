@@ -1,8 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"io"
 	"os"
+	"strings"
 )
 
 /*
@@ -37,19 +40,52 @@ type Person struct {
 	lname string
 }
 
-func ReadNameFile(Path string) []byte {
-	bArray, err := os.ReadFile(Path)
+func getFileName() string {
+	fmt.Println("\nEnter File Path with Name:\te.g ./assets/names.txt ")
+	userinput := bufio.NewScanner(os.Stdin)
+	userinput.Scan()
+	output := userinput.Text()
+	return output
+}
 
-	if err == nil {
-		fmt.Println("\nFile Read")
-	} else {
-		fmt.Println("\nError: ", err)
+func getPersonSlice(file *os.File) []Person {
+	reader := bufio.NewReader(file)
+	var personSlice = make([]Person, 0)
+	for {
+		line, _, err := reader.ReadLine()
+		if err == io.EOF {
+			break
+		}
+		fields := strings.Split(string(line), " ")
+		person := Person{fname: fields[0], lname: fields[1]}
+		personSlice = append(personSlice, person)
 	}
-	return bArray
+	return personSlice
+}
+
+func getFileHandle(path string) (bool, *os.File, error) {
+	file, err := os.Open(path)
+	if err != nil {
+		return false, nil, err
+	}
+
+	if fi, err := file.Stat(); err != nil || fi.IsDir() {
+		return false, nil, err
+	}
+	return true, file, nil
 }
 
 func main() {
 	fmt.Println("\nWeek4 - Assignment 2")
-	names := string(ReadNameFile("./assets/names.txt"))
-	fmt.Println(names)
+
+	exist, file, _ := getFileHandle(getFileName())
+	if !exist {
+		fmt.Printf("File DOES NOT exist.\n")
+		os.Exit(0)
+	}
+
+	persons := getPersonSlice(file)
+	for _, person := range persons {
+		fmt.Printf("fname: [%-20s]; lname: [%-20s]\n", person.fname, person.lname)
+	}
 }

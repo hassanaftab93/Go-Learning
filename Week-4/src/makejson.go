@@ -10,8 +10,6 @@ Your program should use Marshal() to create a JSON object from the map,
 and then your program should print the JSON object.
 
 
-*/
-
 var idMap = map[string]string{}
 
 func AddKeyValuePair(name string, address string) {
@@ -22,7 +20,7 @@ func ReturnMap() map[string]string {
 	return idMap
 }
 
-/*
+
 func WriteFile(Path string, data []byte) { //										Write to file
 	err := os.WriteFile(Path, data, 0777)
 	if err == nil {
