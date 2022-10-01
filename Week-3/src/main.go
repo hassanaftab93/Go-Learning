@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	fmt.Println("\nInitial commit to week 3")
+	fmt.Println(function1())
 	fmt.Println(arrays.Called())
 	fmt.Println(slices.Called())
 	fmt.Println(variableSlices.Called())

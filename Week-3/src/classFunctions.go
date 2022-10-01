@@ -1,5 +1,5 @@
 package main
 
 func function1() string {
-	return "\nJust a function call"
+	return "\nFunction call from classFunctions.go in package main"
 }
