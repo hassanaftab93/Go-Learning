@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	fmt.Println(function1())
+	fmt.Println("\n", function1())
 	fmt.Println(arrays.Called())
 	fmt.Println(slices.Called())
 	fmt.Println(variableSlices.Called())
