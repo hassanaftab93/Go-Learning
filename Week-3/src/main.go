@@ -19,4 +19,12 @@ func main() {
 	fmt.Println(hashTables.Called())
 	fmt.Println(maps.Called())
 	fmt.Println(structs.Called())
+
+	fmt.Println("\nCourse related calls:")
+	//Class related funcs here
+	fmt.Println(function1())
+
+	fmt.Println("\nAssignment related calls:")
+	//Assignment related calls here
+
 }
