@@ -55,6 +55,9 @@ func main() {
 	maps.DeleteKeyValuePair("idMap", "TEO")
 	fmt.Println("\nMap after adding keyvalue pair: ", maps.ExportidMap())
 
+	fmt.Println("\nIterating the Hash table:")
+	maps.IterateTable()
+
 	//Assignment related calls here
 	fmt.Println("\nAssignment related calls:")
 

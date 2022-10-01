@@ -1,5 +1,7 @@
 package maps
 
+import "fmt"
+
 /*
 - What are Maps?
 
@@ -35,5 +37,11 @@ func AddKeyValuePair(key string, value int) {
 func DeleteKeyValuePair(mapName string, key string) {
 	if mapName == "idMap" {
 		delete(idMap, key)
+	}
+}
+
+func IterateTable() {
+	for key, value := range idMap {
+		fmt.Println("\nKey:", key, "\tValue:", value)
 	}
 }
