@@ -23,7 +23,4 @@ func main() {
 
 	//Structs
 	Structs()
-
-	//Assignment related calls here
-	fmt.Println("\nAssignment related calls:")
 }
