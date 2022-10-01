@@ -61,3 +61,8 @@ func Maps() {
 	fmt.Println("\nIterating the Hash table:")
 	maps.IterateTable()
 }
+
+func Structs() {
+	fmt.Println("\n", structs.InitializePerson("Hassan", "Islamabad", "923135189591"))
+	fmt.Println("\n", structs.InitializePerson("Joe", "NY", "001554782"))
+}

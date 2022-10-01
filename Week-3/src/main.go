@@ -21,6 +21,9 @@ func main() {
 	//Maps+Hashtables
 	Maps()
 
+	//Structs
+	Structs()
+
 	//Assignment related calls here
 	fmt.Println("\nAssignment related calls:")
 
