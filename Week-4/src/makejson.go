@@ -40,7 +40,7 @@ func WriteFile(Path string, data []byte) { //										Write to file
 
 func MapToJSON(mapObj map[string]string) {
 	bArray, _ := json.Marshal(mapObj) //			Conversion Go Map -> JSON
-	fmt.Println("\nGo -> JSON Converted\n")
+	fmt.Println("\nGo -> JSON Converted")
 	fmt.Println(bArray)
 	WriteFile("./assets/converted.JSON", bArray)
 }
