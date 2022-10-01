@@ -43,6 +43,13 @@ func main() {
 	slice = variableSlices.AppendSlice(slice, 1)
 	fmt.Println("\nReturned Slice with Append(): ", slice)
 
+	//Maps+Hashtables
+	fmt.Println("\nMap: ", maps.ExportidMap())
+	fmt.Println("\nMap value for \"Hassan\": ", maps.ExportidMap()["Hassan"])
+	fmt.Println("\nAdding new pair: ")
+	maps.AddKeyValuePair("TEO", 4)
+	fmt.Println("\nMap after adding keyvalue pair: ", maps.ExportidMap())
+
 	//Assignment related calls here
 	fmt.Println("\nAssignment related calls:")
 
