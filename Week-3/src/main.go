@@ -22,7 +22,15 @@ func main() {
 
 	fmt.Println("\nCourse related calls:")
 	//Class related funcs here
-	fmt.Println(function1())
+	// fmt.Println(function1())
+
+	//Arrays
+	fmt.Println("\nArray returned Nth Value: ", arrays.ReturnArray()[0]) //[N] at the end is the index of returned value
+	fmt.Println("\nArray returned: ", arrays.ReturnArray()[:])           //[:] for whole array or leave out the [] part, for whole Array
+
+	//Slices
+	fmt.Println("\nSlice1: arr[1:3]: ", slices.ReturnSlice1())
+	fmt.Println("\nSlice2: arr[3:6]: ", slices.ReturnSlice2())
 
 	fmt.Println("\nAssignment related calls:")
 	//Assignment related calls here
